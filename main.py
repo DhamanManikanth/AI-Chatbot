@@ -54,7 +54,7 @@ if user_input:
         with st.spinner("Thinking..."):
             try:
                 # --- Paste your API key here ---
-                HF_TOKEN = "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" 
+                HF_TOKEN = Your_HF_Token
                 # ------------------------------
 
                 client = InferenceClient(
@@ -101,4 +101,5 @@ if st.session_state.messages:
         data=conversation_text.strip(),
         file_name="conversation.txt",
         mime="text/plain"
+
     )
