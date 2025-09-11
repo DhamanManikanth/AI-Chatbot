@@ -56,7 +56,7 @@ if user_input:
         with st.spinner("Thinking..."):
             try:
                 # --- Paste your API key here ---
-                HF_TOKEN = "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" 
+                HF_TOKEN = Your_HF_Token 
                 # ------------------------------
 
                 client = InferenceClient(
