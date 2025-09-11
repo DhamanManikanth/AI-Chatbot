@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from huggingface_hub import InferenceClient
 
-HF_TOKEN = "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"
+HF_TOKEN = Your_HF_Token
 MODEL = "mistralai/Mistral-7B-Instruct-v0.2"
 
 client = InferenceClient(model=MODEL, token=HF_TOKEN)
@@ -23,4 +23,5 @@ with st.form("my_form"):
 
     st.radio("Rate us",[1,2,3,4,5])
     
+
     st.form_submit_button("Submit")
